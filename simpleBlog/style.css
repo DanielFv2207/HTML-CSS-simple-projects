@@ -1,0 +1,73 @@
+:root{
+    --color-backgound: #232831;
+    --primary-font: white;
+    --hero-font: #ff7575;
+    --secondary-color: #898989;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--color-backgound);
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 60%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    font-size: 20px;
+}
+
+header a{
+    color: var(--primary-font);
+    text-decoration: none;
+}
+
+.navbar a{
+    margin-left: 2em;   
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    align-items: center;
+}
+
+.hero img{
+    width: 10em;
+}
+
+.hero h1{
+    color: var(--hero-font);
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 1rem;
+}
+
+.hero h4{
+    color: var(--primary-font);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.line{
+    border: none;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+    height: 1px;
+}
