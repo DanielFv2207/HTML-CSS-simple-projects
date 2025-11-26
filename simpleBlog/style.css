@@ -19,7 +19,8 @@ body{
 }
 
 .container {
-    max-width: 60%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -70,4 +71,45 @@ header a{
     background-color: var(--secondary-color);
     opacity: 0.5;
     height: 1px;
+}
+
+.filters{
+    margin: 1em 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.filters a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.filters img{
+    height: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 2em;
+    row-gap: 2em;
+    margin-top: 5em;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    background-color: var(--primary-font);
+    border-radius: 22px;
+    gap: 40px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
 }
