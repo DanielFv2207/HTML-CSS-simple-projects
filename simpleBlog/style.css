@@ -113,3 +113,59 @@ header a{
 .card img {
     width: 100%;
 }
+
+.under-navbar {
+   display: flex;
+   gap: 5px;
+   font-style: italic;
+   align-items: center;
+   justify-content: center;
+   margin: 6em;
+}
+
+.under-navbar a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.under-navbar a:nth-of-type(3) {
+  color: var(--hero-font);
+  border-top: solid var(--hero-font);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 7em;
+}
+
+footer h3{
+    color: var(--primary-font);
+    display: flex;
+    align-items: center;
+}
+
+footer button{
+    background-color: dodgerblue;
+    padding: 5px;
+    border-radius: 6px;
+    border-style: none;
+    color: var(--primary-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 7px;
+    height: 30px;
+}
+
+footer button:first-child{
+    margin-left: 10px;
+}
+
+footer img{
+    height: 18px;
+}
