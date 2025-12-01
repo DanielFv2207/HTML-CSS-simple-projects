@@ -1,0 +1,96 @@
+:root{
+    --background-color: #DCC7A1;
+    --secondary-color: #8a4bb5;
+    --height-header: 65px;
+    --color-white: white;
+    --text-font: "Outfit", sans-serif;
+    --tlitle-font: "Dancing Script", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--text-font);
+}
+
+.logo{
+    width: 4em;
+    height: 4em;
+}
+
+.header{
+    background-color: var(--background-color);
+    height: var(--height-header);
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.menu:checked + .ul_links{
+    height: 30vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, li{
+    list-style: none;
+}
+
+.menu{
+    display: none;
+}
+
+.ul_links{
+    width: 100%;
+    background-color: var(--background-color);
+    position: absolute;
+    top: var(--height-header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s;
+    padding: 0 2rem;
+}
+
+.nav_link{
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+.list_icon{
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.nav_contacto{
+    background-color: var(--secondary-color);
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 1.2em;
+    color: var(--color-white);
+    font-family: var(--text-font);
+    cursor: pointer;
+}
+
+.nav_item:first-child{
+    padding-top: 2rem;
+}
