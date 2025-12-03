@@ -26,6 +26,9 @@ body{
 .header{
     background-color: var(--background-color);
     height: var(--height-header);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar{
@@ -152,3 +155,67 @@ ol, li{
     font-weight: 700;
     margin: 0;
 }
+
+.section_menu{
+    background-color: var(--background-color);
+}
+
+.menu_img img{
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.15));  
+}
+
+.menu_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+    padding: 4em 1.5em;
+    padding-bottom: 2em;
+}
+
+.menu_info h2{
+    font-style: italic;
+    font-weight: 500;
+    color: #895129;
+}
+
+.menu_info h1{
+    color: var(--color-white);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.9);
+    font-weight: 700;
+}
+
+.menu_line{
+    width: 70%;
+    height: 10px;
+    background-color: #c7a4ff;
+    border-radius: 20px;
+    margin-top: -40px;
+}
+
+.section_menu button{
+    color: var(--color-white);
+    background-color: #895129;
+    width: 55%;
+    height: 60px;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
