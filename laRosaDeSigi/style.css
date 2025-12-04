@@ -5,6 +5,8 @@
     --color-white: white;
     --text-font: "Outfit", sans-serif;
     --tlitle-font: "Dancing Script", cursive;
+    --max-width: 90%;
+    --chocolate-color: #895129;
 }
 
 *{
@@ -161,7 +163,7 @@ ol, li{
 }
 
 .menu_img img{
-    width: 90%;
+    width: var(--max-width);
     height: auto;
     filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.15));  
 }
@@ -170,6 +172,7 @@ ol, li{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 3em;
 }
 
 .menu_info{
@@ -186,7 +189,7 @@ ol, li{
 .menu_info h2{
     font-style: italic;
     font-weight: 500;
-    color: #895129;
+    color: var(--chocolate-color);
 }
 
 .menu_info h1{
@@ -197,7 +200,7 @@ ol, li{
 
 .menu_line{
     width: 70%;
-    height: 10px;
+    height: 5px;
     background-color: #c7a4ff;
     border-radius: 20px;
     margin-top: -40px;
@@ -205,7 +208,7 @@ ol, li{
 
 .section_menu button{
     color: var(--color-white);
-    background-color: #895129;
+    background-color: var(--chocolate-color);
     width: 55%;
     height: 60px;
     border-radius: 30px;
@@ -218,4 +221,47 @@ button:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
+
+.section_pinturas_bg{
+    background-color:#8F63CB;
+    width: 100%;
+    padding: 4em 0;
+}
+
+.section_pinturas{
+    margin: 0 auto;
+    max-width: var(--max-width);    
+}
+
+.pinturas_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    gap: 30px;
+    padding-bottom: 3em;
+}
+
+.pinturas_img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.pinturas_img .main_img{
+    grid-column: 1 / 3;
+    object-fit: cover;
+}
+
+.section_pinturas img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.28);
+    border: 2px solid rgba(255,255,255,0.6);
+    object-fit: cover;
+}
+
 
