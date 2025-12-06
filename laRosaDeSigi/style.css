@@ -31,6 +31,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 
 .navbar{
@@ -194,16 +195,18 @@ ol, li{
 
 .menu_info h1{
     color: var(--color-white);
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.9);
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
     font-weight: 700;
+    font-size: 40px;
 }
 
 .menu_line{
-    width: 70%;
+    width: 220px;
     height: 5px;
     background-color: #c7a4ff;
     border-radius: 20px;
     margin-top: -40px;
+    opacity: 0.8;
 }
 
 .section_menu button{
@@ -223,9 +226,9 @@ button:hover {
 }
 
 .section_pinturas_bg{
-    background-color:#8F63CB;
     width: 100%;
     padding: 4em 0;
+    background: linear-gradient(180deg, #8F63CB, #6E47B5);
 }
 
 .section_pinturas{
@@ -244,23 +247,58 @@ button:hover {
     padding-bottom: 3em;
 }
 
+.pinturas_info h1{
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pinturas_info h1::after {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 4px;
+    background: #D7B9FF;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.pinturas_info h3{
+    margin-top: -20px;
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.pinturas_info p{
+    max-width: 320px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-top: 30px;
+    color: #f8f5ff;
+    font-size: 18px;
+}
+
 .pinturas_img{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    margin-top: 25px;
 }
 
 .pinturas_img .main_img{
     grid-column: 1 / 3;
     object-fit: cover;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .section_pinturas img{
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.28);
-    border: 2px solid rgba(255,255,255,0.6);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
     object-fit: cover;
 }
 
