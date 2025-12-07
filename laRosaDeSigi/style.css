@@ -31,7 +31,6 @@ body{
     position: sticky;
     top: 0;
     z-index: 100;
-    
 }
 
 .navbar{
@@ -268,6 +267,7 @@ button:hover {
     font-size: 22px;
     font-weight: 600;
     opacity: 0.95;
+    font-style: italic;
 }
 
 .pinturas_info p{
@@ -302,4 +302,65 @@ button:hover {
     object-fit: cover;
 }
 
+.section_historia_bg{
+    background-color: var(--background-color);
+    color: var(--chocolate-color);
+    padding: 4em 2em;
+}
 
+.section_historia_bg img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.historia_titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 1em;
+}
+
+.historia_titles h1{
+    font-size: 2.7em;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.historia_titles h3{
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.historia_titles h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--chocolate-color);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.historia_parts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.parrafo2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.historia_parts p{
+    font-size: 1em;
+}
