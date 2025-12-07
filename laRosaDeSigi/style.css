@@ -7,6 +7,7 @@
     --tlitle-font: "Dancing Script", cursive;
     --max-width: 90%;
     --chocolate-color: #895129;
+    --morado-gradient-color: linear-gradient(180deg, #8F63CB, #6E47B5);
 }
 
 *{
@@ -227,7 +228,7 @@ button:hover {
 .section_pinturas_bg{
     width: 100%;
     padding: 4em 0;
-    background: linear-gradient(180deg, #8F63CB, #6E47B5);
+    background: var(--morado-gradient-color);
 }
 
 .section_pinturas{
@@ -362,5 +363,74 @@ button:hover {
 }
 
 .historia_parts p{
+    font-size: 1em;
+}
+
+footer img{
+    width: 4em;
+    height: auto;
+}
+
+.footer{
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+    padding: 2em 2em;
+}
+
+.footer_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_logo h2{
+    font-family: var(--tlitle-font);
+}
+
+.ul_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ul_footer a{
+    color: var(--color-white);
+}
+
+.footer_list{
+    margin: 2em 0;
+}
+
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social_icon{
+    color: white;
+    border-radius: 100%;
+    border: solid white 2px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.footer_rights::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-white);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.footer_rights p{
     font-size: 1em;
 }
