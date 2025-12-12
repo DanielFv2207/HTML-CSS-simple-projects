@@ -194,7 +194,7 @@ ol, li{
     font-style: italic;
     font-weight: 500;
     color: var(--chocolate-color);
-    font-size: clamp(1.5rem, 2vw, 40rem);
+    font-size: clamp(1.5rem, 2vw, 4rem);
 }
 
 .menu_info h1{
@@ -465,6 +465,7 @@ footer img{
 @media (min-width: 992px) {
     .section_menu button{
     width: 40%;
+
 }
 }
 
